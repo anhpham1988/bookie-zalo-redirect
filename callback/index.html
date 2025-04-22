@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Callback Page</title></head>
+<body>
+  <h1>Zalo Redirect Successful!</h1>
+  <p>If you're seeing this page, Zalo has redirected back correctly.</p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    if (code) {
+      document.write("<p><strong>CODE:</strong> " + code + "</p>");
+    }
+  </script>
+</body>
+</html>
